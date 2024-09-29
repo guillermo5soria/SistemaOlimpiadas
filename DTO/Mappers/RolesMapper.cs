@@ -14,15 +14,15 @@ namespace DTO.Mappers
         {
             return new RolDTO()
             {
-                Ids = rol.Id,
+                Id = rol.Id,
                 Nombre = rol.Nombre
             };
         }
 
         public static Rol ToRol(RolDTO dto)
         {
-            Rol rol = new Rol() { Id = dto.Id, Nombre = dto.Nombre };
-            return rol;
+            Rol roles = new Rol() { Id = dto.Id, Nombre = dto.Nombre };
+            return roles;
         }
 
         public static IEnumerable<RolDTO> ToListaDTO(IEnumerable<Rol> roles)
