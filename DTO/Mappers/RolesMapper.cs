@@ -14,7 +14,7 @@ namespace DTO.Mappers
         {
             return new RolDTO()
             {
-                Id = rol.Id,
+                Ids = rol.Id,
                 Nombre = rol.Nombre
             };
         }
